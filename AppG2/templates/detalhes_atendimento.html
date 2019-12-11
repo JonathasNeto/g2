@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+{% block titulo %}<h1>Detalhes Atendimento</h1>{% endblock %}
+{% block conteudo %}
+
+    
+    <div>
+        {% for at in atendimento %}
+            <p>Origen: {{at.solicitacao.origen}} </p>
+            <p>Destino: {{at.solicitacao }}</P>
+            <p>Veiculo: {{at.veiculo }}</P>
+            <p>Motorista: {{at.motorista }}</P>
+        {% endfor %}
+    
+{% endblock %}
+    </div>
+</head>
+</html>

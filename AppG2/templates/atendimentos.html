@@ -1,0 +1,13 @@
+<html>
+<head>
+    <h1>Lista Chefe de Transporte</h1>
+</head>
+<body>
+    
+    <div>
+        {% for atendimento in atendimentos %}
+            <p><a href='{{atendimento.id}}'>{{atendimento.solicitacao }}</a></P>
+        {% endfor %}
+    </div>
+</head>
+</html>

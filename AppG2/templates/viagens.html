@@ -1,0 +1,15 @@
+<html>
+<head>
+    <h1>Viagens </h1>
+</head>
+<body>
+    
+    <div>
+        {% for f in fun %}
+            <h3>Viagem de {{f.motorista}} </h3>
+            <p>Destino: {{f.solicitacao }}</P>
+            <p>Veiculo: {{f.veiculo }}</P>
+        {% endfor %}
+    </div>
+</head>
+</html>
